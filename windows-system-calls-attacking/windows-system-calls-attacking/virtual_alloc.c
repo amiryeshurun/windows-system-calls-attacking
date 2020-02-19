@@ -118,7 +118,13 @@ VOID WriteOnAddress(int pid) {
 	printf("Please enter the address of the variable: ");
 	scanf_s("%x", &address);
 	HANDLE p = NtOpenProcess2(PROCESS_VM_OPERATION | PROCESS_VM_READ | PROCESS_VM_WRITE, (DWORD)pid);
-	NTSTATUS s = NtWriteVirtualMemory(p, address, (PVOID)val, (ULONG)(4*sizeof(char)), NULL);
+	for (unsigned long long i = 0; i < 0xFFFFFFFF; i++) {
+		NTSTATUS val1 = NtWriteVirtualMemory(p, i, (PVOID)val, (ULONG)(4 * sizeof(char)), NULL);
+		if (NT_SUCCESS(val1))
+			puts("big");
+		else
+			printf("%x\n", val1);
+	}
 }
 
 int main() 
