@@ -76,7 +76,7 @@ typedef VOID(__stdcall* _RtlInitUnicodeString)(
       (i)->Length = sizeof( OBJECT_ATTRIBUTES );         \
       (i)->RootDirectory = r;                            \
       (i)->Attributes = a;                               \
-      (i)->ObjectName = o;                               \
+      (i)->ObjectName = NULL;                            \
       (i)->SecurityDescriptor = s;                       \
       (i)->SecurityQualityOfService = NULL;              \
    }
