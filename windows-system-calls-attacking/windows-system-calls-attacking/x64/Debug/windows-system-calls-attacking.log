@@ -1,4 +1,7 @@
 ﻿  remote_thread.c
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(11,8): warning C4133: 'function': incompatible types - from 'SIZE_T *' to 'PULONG'
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(17,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'SIZE_T'
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(17,10): message : consider using '%lld' in the format string
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(17,10): message : consider using '%Id' in the format string
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(17,10): message : consider using '%I64d' in the format string
 C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(5,1): warning C4113: '_NtWriteVirtualMemory' differs in parameter lists from '_NtAllocateVirtualMemory'
   windows-system-calls-attacking.vcxproj -> C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\x64\Debug\windows-system-calls-attacking.exe
