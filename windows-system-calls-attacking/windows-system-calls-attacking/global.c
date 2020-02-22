@@ -53,7 +53,9 @@ HANDLE NtOpenProcess2(DWORD dwDesiredAccess, DWORD dwProcessId)
 
 	HANDLE hProcess = NULL;
 	NTSTATUS ntStatus = NtOpenProcess1(&hProcess, dwDesiredAccess, &oa, &cid);
-
+	if (!NT_SUCCESS(ntStatus))
+		printf("%x\n", ntStatus);
 	SetLastError(ntStatus);
 	return hProcess;
 }
+

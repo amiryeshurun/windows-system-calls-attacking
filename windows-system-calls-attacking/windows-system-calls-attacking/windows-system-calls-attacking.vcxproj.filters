@@ -10,6 +10,9 @@
     <Filter Include="src\utils">
       <UniqueIdentifier>{f7d4747e-208b-4e48-b4f4-5e2e9f349d0a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Attacks">
+      <UniqueIdentifier>{0e526500-93d2-4a33-9366-eb1dc04786dd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fptr.h">
@@ -17,14 +20,17 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="virtual_alloc.c">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="global.c">
       <Filter>src\utils</Filter>
     </ClCompile>
     <ClCompile Include="utils.h">
       <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="virtual_alloc.c">
+      <Filter>src\Attacks</Filter>
+    </ClCompile>
+    <ClCompile Include="remote_thread.c">
+      <Filter>src\Attacks</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
