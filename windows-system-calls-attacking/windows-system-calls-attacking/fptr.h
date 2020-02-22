@@ -1,10 +1,19 @@
-#pragma once
+#ifndef __F_PTR_H
+#define __F_PTR_H
+
 #include <Windows.h>
 #include <stdio.h>
 #include <processthreadsapi.h>
 #include <MMSystem.h>
 
-#define NT_SUCCESS(x) ((x)>=0)
+#define InitializeObjectAttributes( p, n, a, r, s ) { \
+    (p)->Length = sizeof( OBJECT_ATTRIBUTES );          \
+    (p)->RootDirectory = r;                             \
+    (p)->Attributes = a;                                \
+    (p)->ObjectName = n;                                \
+    (p)->SecurityDescriptor = s;                        \
+    (p)->SecurityQualityOfService = NULL;               \
+    }
 
 typedef struct _IO_STATUS_BLOCK {
 	union {
@@ -63,23 +72,12 @@ typedef NTSTATUS(__stdcall* _NtWriteFile)(
 	IN PULONG               Key OPTIONAL
 	);
 
+
 typedef VOID(__stdcall* _RtlInitUnicodeString)(
 	PUNICODE_STRING DestinationString,
 	PCWSTR SourceString
 	);
 
-#define FILE_CREATE 0x00000002
-#define FILE_NON_DIRECTORY_FILE 0x00000040
-#define OBJ_CASE_INSENSITIVE 0x00000040L
-
-#define InitializeObjectAttributes( i, o, a, r, s ) {    \
-      (i)->Length = sizeof( OBJECT_ATTRIBUTES );         \
-      (i)->RootDirectory = r;                            \
-      (i)->Attributes = a;                               \
-      (i)->ObjectName = NULL;                            \
-      (i)->SecurityDescriptor = s;                       \
-      (i)->SecurityQualityOfService = NULL;              \
-   }
 
 typedef HANDLE(__stdcall* _NtCurrentProcess)();
 
@@ -92,17 +90,27 @@ typedef NTSTATUS(__stdcall* _NtAllocateVirtualMemory)(
 	IN ULONG                Protect
 	);
 
+
 typedef struct _CLIENT_ID {
 	HANDLE UniqueProcess;
 	HANDLE UniqueThread;
 } CLIENT_ID, * PCLIENT_ID;
+
 
 typedef NTSTATUS (__stdcall* _NtOpenProcess)(
 	PHANDLE            ProcessHandle,
 	ACCESS_MASK        DesiredAccess,
 	POBJECT_ATTRIBUTES ObjectAttributes,
 	PCLIENT_ID         ClientId
-);
+	);
+
+
+typedef NTSTATUS (NTAPI* TNtOpenProcess)(
+	PHANDLE ProcessHandle,
+	ACCESS_MASK AccessMask,
+	POBJECT_ATTRIBUTES ObjectAttributes,
+	PCLIENT_ID ClientID
+	);
 
 
 typedef NTSTATUS (__stdcall* _NtWriteVirtualMemory)(
@@ -111,4 +119,6 @@ typedef NTSTATUS (__stdcall* _NtWriteVirtualMemory)(
 	IN PVOID                Buffer,
 	IN ULONG                NumberOfBytesToWrite,
 	OUT PULONG              NumberOfBytesWritten OPTIONAL
-);
+	);
+
+#endif

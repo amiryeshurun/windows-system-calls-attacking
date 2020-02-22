@@ -1,14 +1,13 @@
-﻿  virtual_alloc.c
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\virtual_alloc.c(44,1): warning C4005: 'InitializeObjectAttributes': macro redefinition
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\fptr.h(82): message : see previous definition of 'InitializeObjectAttributes'
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\virtual_alloc.c(52,11): warning C4047: 'return': 'HANDLE' differs in levels of indirection from 'int'
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\virtual_alloc.c(56,11): warning C4047: 'return': 'HANDLE' differs in levels of indirection from 'int'
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\virtual_alloc.c(58,39): warning C4312: 'type cast': conversion from 'DWORD' to 'HANDLE' of greater size
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\virtual_alloc.c(81,74): warning C4133: 'function': incompatible types - from 'SIZE_T *' to 'PULONG'
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\virtual_alloc.c(87,10): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'PVOID'
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\virtual_alloc.c(97,69): warning C4047: 'function': 'DWORD' differs in levels of indirection from 'void *'
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\virtual_alloc.c(97,69): warning C4024: 'CreateToolhelp32Snapshot': different types for formal and actual parameter 2
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\virtual_alloc.c(119,10): warning C4477: 'scanf_s' : format string '%x' requires an argument of type 'unsigned int *', but variadic argument 1 has type 'PVOID *'
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\virtual_alloc.c(122,44): warning C4022: 'NtWriteVirtualMemory': pointer mismatch for actual parameter 2
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\virtual_alloc.c(91): warning C4716: 'GetMemory1': must return a value
+﻿  global.c
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\global.c(7,69): warning C4047: 'function': 'DWORD' differs in levels of indirection from 'void *'
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\global.c(7,69): warning C4024: 'CreateToolhelp32Snapshot': different types for formal and actual parameter 2
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\global.c(31,74): warning C4133: 'function': incompatible types - from 'SIZE_T *' to 'PULONG'
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\global.c(43,11): warning C4047: 'return': 'HANDLE' differs in levels of indirection from 'int'
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\global.c(47,11): warning C4047: 'return': 'HANDLE' differs in levels of indirection from 'int'
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\global.c(49,39): warning C4312: 'type cast': conversion from 'DWORD' to 'HANDLE' of greater size
+  virtual_alloc.c
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\virtual_alloc.c(10,10): warning C4477: 'scanf_s' : format string '%x' requires an argument of type 'unsigned int *', but variadic argument 1 has type 'PVOID *'
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\virtual_alloc.c(13,44): warning C4022: 'NtWriteVirtualMemory': pointer mismatch for actual parameter 2
+  Generating Code...
+  utils.h
   windows-system-calls-attacking.vcxproj -> C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\x64\Debug\windows-system-calls-attacking.exe

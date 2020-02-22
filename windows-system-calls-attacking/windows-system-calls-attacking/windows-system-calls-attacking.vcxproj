@@ -139,9 +139,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="fptr.h" />
-    <ClInclude Include="wdm.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="global.c" />
+    <ClCompile Include="utils.h" />
     <ClCompile Include="virtual_alloc.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
