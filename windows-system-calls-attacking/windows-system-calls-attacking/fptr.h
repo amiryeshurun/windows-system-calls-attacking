@@ -121,4 +121,17 @@ typedef NTSTATUS (__stdcall* _NtWriteVirtualMemory)(
 	OUT PULONG              NumberOfBytesWritten OPTIONAL
 	);
 
+typedef NTSTATUS(__stdcall* _NtCreateThreadEx)(
+	OUT PHANDLE hThread,
+	IN ACCESS_MASK DesiredAccess,
+	IN PVOID ObjectAttributes,
+	IN HANDLE ProcessHandle,
+	IN PVOID lpStartAddress,
+	IN PVOID lpParameter,
+	IN ULONG Flags,
+	IN SIZE_T StackZeroBits,
+	IN SIZE_T SizeOfStackCommit,
+	IN SIZE_T SizeOfStackReserve,
+	OUT PVOID lpBytesBuffer
+	);
 #endif
