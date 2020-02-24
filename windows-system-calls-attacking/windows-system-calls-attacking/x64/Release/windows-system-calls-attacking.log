@@ -8,4 +8,9 @@ C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attack
 C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(22,10): message : consider using '%Id' in the format string
 C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(22,10): message : consider using '%I64d' in the format string
 C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(8,1): warning C4113: '_NtWriteVirtualMemory' differs in parameter lists from '_NtAllocateVirtualMemory'
-  windows-system-calls-attacking.vcxproj -> C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\x64\Debug\windows-system-calls-attacking.exe
+  Generating code
+  2 of 8 functions (25.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  windows-system-calls-attacking.vcxproj -> C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\x64\Release\windows-system-calls-attacking.exe
