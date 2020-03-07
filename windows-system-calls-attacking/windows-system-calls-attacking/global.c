@@ -1,4 +1,5 @@
 #include "utils.h"
+#include <Psapi.h>
 
 int GetPidFromName(wchar_t str[]) {
 	PROCESSENTRY32 entry;
@@ -59,3 +60,24 @@ HANDLE NtOpenProcess2(DWORD dwDesiredAccess, DWORD dwProcessId)
 	return hProcess;
 }
 
+PCHAR CopyStringToPCHAR(CHAR str[])
+{
+	int len = strlen(str), i = 0;
+	PCHAR cpy = (PCHAR)malloc(sizeof(CHAR) * (len + 1));
+	for (; i < len; i++)
+		cpy[i] = str[i];
+	return cpy;
+}
+
+PWCHAR GetProcessNameByPid(int pid)
+{
+	HANDLE h = NtOpenProcess2(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ, pid);
+	if (h)
+	{
+#define MAX_PATH 800
+		WCHAR buffer[MAX_PATH];
+		if (GetModuleFileNameEx(h, 0, buffer, MAX_PATH))
+			return _wcsdup(buffer);
+		CloseHandle(h);
+	}
+}

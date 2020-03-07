@@ -139,10 +139,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="fptr.h" />
+    <ClInclude Include="tests.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="global.c" />
+    <ClCompile Include="main.c" />
     <ClCompile Include="remote_thread.c" />
+    <ClCompile Include="test_remote_thread.c" />
+    <ClCompile Include="test_virtual_alloc.c" />
     <ClCompile Include="utils.h" />
     <ClCompile Include="virtual_alloc.c" />
   </ItemGroup>

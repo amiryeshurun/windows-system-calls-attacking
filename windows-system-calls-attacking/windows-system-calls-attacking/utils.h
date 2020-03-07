@@ -12,6 +12,6 @@
 int GetPidFromName(wchar_t str[]);
 PVOID AllocateVirtualMemory(SIZE_T size, int pid);
 HANDLE NtOpenProcess2(DWORD dwDesiredAccess, DWORD dwProcessId);
-
-
+PWCHAR GetProcessNameByPid(int pid);
+PCHAR CopyStringToPCHAR(CHAR str[]);
 #endif
