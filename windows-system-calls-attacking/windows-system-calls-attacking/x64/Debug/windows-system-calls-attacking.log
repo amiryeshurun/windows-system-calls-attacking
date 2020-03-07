@@ -3,9 +3,11 @@ C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attack
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\sdkddkver.h(217): message : see previous definition of '_WIN32_WINNT'
 C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(4,1): warning C4005: 'WINVER': macro redefinition
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\sdkddkver.h(238): message : see previous definition of 'WINVER'
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(23,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'SIZE_T'
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(23,10): message : consider using '%lld' in the format string
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(23,10): message : consider using '%Id' in the format string
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(23,10): message : consider using '%I64d' in the format string
-C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(9,1): warning C4113: '_NtWriteVirtualMemory' differs in parameter lists from '_NtAllocateVirtualMemory'
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(115,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'SIZE_T'
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(115,10): message : consider using '%lld' in the format string
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(115,10): message : consider using '%Id' in the format string
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(115,10): message : consider using '%I64d' in the format string
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(101,1): warning C4113: '_NtWriteVirtualMemory' differs in parameter lists from '_NtAllocateVirtualMemory'
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(147,12): warning C4477: 'printf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'HANDLE'
+C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\windows-system-calls-attacking\remote_thread.c(147,12): warning C4313: 'printf': '%x' in format string conflicts with argument 1 of type 'HANDLE'
   windows-system-calls-attacking.vcxproj -> C:\Users\amir\Desktop\windows-system-calls-attacking\windows-system-calls-attacking\x64\Debug\windows-system-calls-attacking.exe
